@@ -28,12 +28,13 @@ public class MainSistem {
                     dataTransaksi.tampil1();
                     break;
                 case 3:
-                System.out.print("Masukkan nama pembeli yang dicari: ");
-                String cariNama = sc.nextLine();
-                serviceTransaksi.pencarian(cariNama);
+                    System.out.print("Masukkan nama pembeli yang dicari: ");
+                    String cariNama = sc.nextLine();
+                    serviceTransaksi.searching(cariNama);
                     break;
                 case 4:
-                 
+                    serviceTransaksi.Sorting();
+                    dataTransaksi.tampil1();
                     break;
                 default:
                     System.out.println("Pilihan tidak valid, coba lagi.");
